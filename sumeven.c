@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include<conio.h>
+#include <conio.h>
 void main(){
-  int num,sum,data,rem,i;
+  int num,sum,data,i;
   printf("enter the elements to sum\n");
   scanf("%d",&num);
   i=1;
@@ -9,11 +9,10 @@ void main(){
   while(i<=num){
     printf("enter data number\t");
     scanf("%d",&data);
-    rem=data%2;
-    if(rem==0){
+    if(data%2==0){
       sum+=data;
         }
         i++;
      } 
-    printf("the sum is %d",sum);
+    printf("the sum is %d\n",sum);
 }
